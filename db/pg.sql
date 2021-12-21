@@ -1,0 +1,24 @@
+-- SQLSHELL:
+
+-- for help \?
+-- for all databases \l
+-- for connecting to another database \c nameDatabase (CREATE DATABASE dbName)
+-- list all tables \d (if there's a specific table \d tableName) (CREATE TABLE tableName)
+
+-- PG:
+-- CREATE TABLE restaurants (
+--     res_id BIGSERIAL PRIMARY KEY,
+--     res_name VARCHAR(50) NOT NULL,
+--     res_location VARCHAR(50) NOT NULL,
+--     res_price_range INT NOT NULL check(
+--         res_price_range >= 1 and res_price_range <= 5
+--     )
+-- );
+-- CREATE TABLE products (
+--     pro_id BIGSERIAL PRIMARY KEY,
+--     pro_name VARCHAR(50) NOT NULL,
+--     pro_price INT NOT NULL,
+--     pro_on_sale BOOLEAN NOT NULL
+-- );
+-- INSERT INTO restaurants(res_name, res_location, res_price_range) VALUES('mcdonalds', 'new york', 3);
+-- SELECT * FROM restaurants
