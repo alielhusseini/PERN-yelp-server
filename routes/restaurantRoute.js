@@ -7,5 +7,6 @@ router.post('/', middlewareAuthTest, restaurantController.postNewRestaurant)
 router.get("/:id", restaurantController.getRestaurant)
 router.delete("/:id", middlewareAuthTest, restaurantController.deleteRestaurant)
 router.put("/:id", middlewareAuthTest, restaurantController.updateRestaurant)
+router.post("/:id/add-review", middlewareAuthTest, restaurantController.addReview)
 
 module.exports = router
